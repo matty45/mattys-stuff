@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig clang? ( sys-devel/clang ) gcc? ( sys-devel/gcc )
+DEFINED_PHASES=-
+DEPEND=opengl? ( virtual/opengl ) sdl? ( media-libs/libsdl2 ) alsa? ( media-libs/alsa-lib ) libao? ( media-libs/libao ) openal? ( media-libs/openal ) media-libs/libcanberra gtk2? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3 )
+DESCRIPTION=A multi-system emulator focusing on accuracy and game preservation.
+EAPI=8
+HOMEPAGE=https://github.com/ares-emulator/ares https://ares-emu.net/
+IUSE=opengl sdl alsa libao openal gtk2 gtk3 clang gcc
+KEYWORDS=~amd64
+LICENSE=ares
+RDEPEND=opengl? ( virtual/opengl ) sdl? ( media-libs/libsdl2 ) alsa? ( media-libs/alsa-lib ) libao? ( media-libs/libao ) openal? ( media-libs/openal ) media-libs/libcanberra gtk2? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3 )
+REQUIRED_USE=clang? ( !gcc ) gcc? ( !clang )
+SLOT=0
+SRC_URI=https://github.com/ares-emulator/ares/archive/v136.tar.gz -> ares-136.tar.gz
+_md5_=9cb0d569203cce625dd93e3d86e68ab8
